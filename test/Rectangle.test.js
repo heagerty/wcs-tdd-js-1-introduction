@@ -16,5 +16,6 @@ describe('rectangle', () => {
   });
   it('determines if it is a square', () => {
     assert.strictEqual(new rectangle(10,10).isSquare(), true);
+    assert.strictEqual(new rectangle(10,11).isSquare(), false);
   });
 });
